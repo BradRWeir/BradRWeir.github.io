@@ -1,0 +1,33 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+h2{
+    font-size: 1em;
+}
+
+header {
+    background-color: #3C3C3C;
+    color:#CCCCCC;
+    box-shadow: 0em 0em 0.5em 0.5em rgba(0,0,0,0.75);
+    z-index:3;
+}
+
+nav {
+    background-color: #222222;
+    box-shadow: 0em 0em 0.5em 0.5em rgba(0,0,0,0.75);
+    z-index:2;
+}
+
+main {
+    background-color:#1E1E1E;
+    color: white;
+}
+
+footer {
+    background-color: #007ACC;
+    color:white;
+    box-shadow: 0em 0em 0.5em 0.5em rgba(0,0,0,0.75);
+    z-index:1;
+}

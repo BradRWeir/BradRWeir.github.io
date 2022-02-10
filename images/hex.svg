@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="143.479 147.5 213.042 205" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <path d="M 144.611 0 L 215.62508311 41 L 215.62508311 123 L 144.611 164 L 73.59691689 123 L 73.59691689 41 Z" style="fill: rgb(155, 76, 148); stroke-miterlimit: 1; paint-order: fill; stroke: rgb(0, 0, 0);" transform="matrix(0.5, 0.866025, -0.866025, 0.5, 248.708557, 83.763206)" bx:shape="n-gon 144.611 82 82 82 6 0 1@1ff204bf"/>
+  <path d="M 178.986 291 L 321.014 209 L 321.014 291 L 250 250" style="fill: rgb(155, 76, 148); stroke-miterlimit: 1; paint-order: fill; stroke: rgb(0, 0, 0); visibility: hidden;"/>
+  <polygon style="stroke: rgb(0, 0, 0); fill: rgb(104, 33, 122);" points="250 332 178.986 291 250 250 321.014 291"/>
+  <path d="M 278.735 250 C 278.735 265.87 265.87 278.735 250 278.735 C 234.13 278.735 221.265 265.87 221.265 250 C 221.265 234.13 234.13 221.265 250 221.265 C 265.87 221.265 278.735 234.13 278.735 250 Z M 250 201.15 C 223.021 201.15 201.15 223.021 201.15 250 C 201.15 276.979 223.021 298.85 250 298.85 C 276.979 298.85 298.85 276.979 298.85 250 C 298.85 223.021 276.979 201.15 250 201.15 Z" style="stroke: rgb(0, 0, 0); fill: rgb(255, 255, 255);"/>
+  <polygon style="stroke: rgb(0, 0, 0); fill: rgb(129, 55, 135);" points="321.014 209 250 250 321.014 291"/>
+</svg>

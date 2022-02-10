@@ -1,0 +1,171 @@
+html,body {
+    margin: 0;
+    padding:0;
+    border:0;
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    margin: 0;
+    padding:0;
+    border:0;
+    display: grid;
+}
+
+.wrapper {
+    margin: 0;
+    padding:0;
+    border:0;
+    display: flex;
+}
+
+.inline-wrapper {
+    margin: 0;
+    padding:0;
+    border:0;
+    display: inline-flex;
+    float: left;
+}
+
+#layout {
+    grid-template-rows: 5rem 5rem 5rem 1fr min-content;
+    grid-template-columns: 5rem 1fr;
+    grid-template-areas:
+    "header header"
+    "nav-bio main"
+    "nav-resume main"
+    "nav-projects main"
+    "filler main"
+    "footer footer";
+    min-height: 100%;
+}
+
+#layout > header {
+    
+    grid-area: header;
+}
+
+#logo {
+    height:2em;
+}
+
+#layout input[type="radio"] {
+    display:none;
+}
+
+#layout .frame {
+    display: none;
+}
+
+#layout .nav-label {
+    background-color: #333333;
+}
+
+#layout input[type="radio"]:checked + label + .frame{
+    display: block;
+}
+
+#layout .bio{
+    grid-area: nav-bio;
+    
+}
+
+.icon {
+    width: 100%; height: auto;
+    filter: invert(40%);
+}
+
+.icon-row {
+    width: auto; height: 75%;
+    filter: invert(40%);
+}
+
+#layout .resume{
+    grid-area: nav-resume;
+    
+}
+
+#layout .projects{
+    grid-area: nav-projects;
+    
+}
+
+#layout .frame {
+    grid-area: main;
+}
+
+#layout > .filler{
+    grid-area: filler;
+}
+
+#layout > footer {
+    grid-area: footer;
+}
+
+#title {
+    height:100%;
+
+    justify-content:flex-start;
+    align-items: center;
+
+}
+
+#title * {
+    margin-left: 0.5em;
+}
+
+#social {
+    justify-content: flex-end;
+    padding-right: 1em;
+    height:100%;
+    padding-top:0.5em;
+}
+
+#social a{
+    padding-right: 1em;
+}
+
+h1 {
+    margin:0;
+}
+
+h2 {
+    margin: 0;
+}
+
+#nav {
+    flex-direction: column;
+    gap: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+article {
+    margin: 5em;
+}
+
+footer {
+    text-align: center;
+}
+
+.round {
+    height: 10em;
+    width: auto;
+    border-radius: 50%;
+    float: right;
+}
+
+iframe {
+    margin:0;
+    border: 0;
+    padding: 0;
+    height:100%;
+    width:100%;
+    overflow-x:hidden;
+}
+
+.screenshot {
+    height: 10em;
+    width: auto;
+}

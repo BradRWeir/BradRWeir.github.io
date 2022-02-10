@@ -1,0 +1,24 @@
+#center{
+    width:auto;
+    height:auto;
+    margin:0 auto;
+  }
+
+  #left{
+    width:25%;
+    background-color: darkslategrey;
+    color:white;
+    padding:0.25em;
+
+}
+
+body{
+    -webkit-print-color-adjust: exact !important;
+
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}

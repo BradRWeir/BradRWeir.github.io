@@ -1,1 +1,113 @@
-Hello, world.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brad Weir - Professional Portfolio</title>
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/theme.css">
+    <!-- font awesome start -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- font awesome end -->
+</head>
+<body>
+    <div id="layout" class="container">
+        <header>
+            <!-- <img src="images/logo.svg" /> -->
+            <div id="title" class="inline-wrapper">
+                <div id="logo"><img src="images/logo.svg" height="100%" alt="B W bricks logo"/></div>
+                <h1>Brad Weir</h1><h2>Professional Portfolio</h2>
+            </div>
+            <div id="social" class="wrapper">
+                <aside>
+                    <a href="https://www.github.com/BradRWeir"><img src="images/github-square-brands.svg" class="icon-row" alt="github icon"></a>
+                    <a href="https://www.linkedin.com/in/bradleyrweir/"><img src="images/linkedin-brands.svg" class="icon-row" alt="linked-in icon"></a>
+                    <a href="https://www.twitter.com"><img src="images/twitter-square-brands.svg" class="icon-row" alt="twitter icon"></a>
+                </aside>
+            </div><!--end wrapper -->
+        </header>
+        <!-- <nav>
+            <div id="nav" class="wrapper">
+                <img src = "images/hex.svg">
+                <img src = "images/hex.svg">
+                <img src = "images/hex.svg">
+                <img src = "images/hex.svg">
+            </div>
+        </nav> -->
+        <input type="radio" checked="true" id="radio-bio" name="left-nav">
+        <label class="nav-label bio" for="radio-bio"><img src = "images/person_black_24dp.svg" class="icon" alt="bio icon"></label>
+        <main class="frame">
+            <article>
+                <h3>Bio</h3>
+                <img src="images/square_headshot_med.jpg" class="round" alt="headshot">
+                <p>
+                    My name is Brad Weir and I currently reside in Canton, Ohio.
+                    I am a software developer with a year of experience and I am currently attending WCCI, a coding bootcamp, to formalize my knowledge and further my career.
+                    I am passionate about programming, technology and science.
+                    I have an interest in travel and have a particular fondness for Boston, though my time spent there was brief.
+                    Please explore the content on this page and I will endeavor to update it with more impressive projects as I improve my skills.
+                    <br><br>- Brad
+                </p>
+
+                <h4>Skills</h4>
+                <p>
+                    C#, HTML 5, CSS 3, .NET, OOP, ASP.NET, Razor, MVC, TDD, Git, GitHub
+                </p>                
+            </article>
+        </main>
+        <input type="radio" id="radio-resume" name="left-nav">
+        <label class="nav-label resume" for="radio-resume"><img src = "images/article_black_24dp.svg" class="icon" alt="resume icon"></label>
+        <main class="frame">
+
+                <iframe width="100%" height="100%" src="resume/index.html"></iframe>
+
+        </main>
+        <input type="radio" id="radio-projects" name="left-nav">
+        <label class="nav-label projects" for="radio-projects"><img src = "images/code_black_24dp.svg" class="icon" alt="projects icon"></label>
+        <main class="frame">
+            <article>
+                <h3>Projects</h3>
+                
+                <h4>
+                    <a href="https://github.com/2022-Spring-Cohort/m1-class-of-your-choice-BradRWeir">
+                        Class of Your Choice
+                    </a>
+                </h4>
+                <img src="images/class-of-your-choice-screenshot.png" class="screenshot" alt="screenshot of class of your choice project">
+                <p>
+                    A simple use of a Menu class and a Prompt class I created for the console that handles user input and user validation.
+                    Skills displayed: Functional Programming, Object-Oriented Programming, Test-Driven Development, User Stories.
+                </p>
+                
+                <h4>
+                    <a href="https://github.com/2022-Spring-Cohort/m1-class-of-your-choice-BradRWeir">
+                        Virtual Pet
+                    </a>
+                </h4>
+                <img src="images/virtual-pet-screenshot.png" class="screenshot" alt="screenshot of virtual pet project">
+                <p>
+                    I reused the Menu and Prompt classes from the aforementioned project to create a simple Tamagachi-like game.
+                    Skills displayed: Functional Programming, Object-Oriented Programming, Test-Driven Development, User Stories, Events.
+                </p>
+                <h4>
+                    <a href="https://github.com/BradRWeir/BradRWeir.github.io">
+                        Professional Portfolio
+                    </a>
+                    
+                </h4>
+                <img src="images/professional-portfolio-screenshot.png" class="screenshot" alt="screenshot of professional portfolio project">
+                <p>
+                    This project is what you are viewing now.
+                    Skills displayed: HTML 5, CSS 3, JavaScript, Semantic HTML.
+                </p>
+            </article>
+        </main>
+        <div class="nav-label filler"></div>
+        
+        <footer>&copy Brad Weir - 2022</footer>
+    </div><!-- end container -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js" integrity="sha512-Tn2m0TIpgVyTzzvmxLNuqbSJH3JP8jm+Cy3hvHrW7ndTDcJ1w5mBiksqDBb8GpE2ksktFvDB/ykZ0mDpsZj20w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>
