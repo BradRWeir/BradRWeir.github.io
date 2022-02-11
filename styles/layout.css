@@ -29,21 +29,61 @@ html,body {
 }
 
 #layout {
-    grid-template-rows: 5rem 5rem 5rem 1fr min-content;
-    grid-template-columns: 5rem 1fr;
+    grid-template-rows: 5rem 5rem 5rem 5rem 1fr min-content;
+    grid-template-columns: 5rem 1fr 5rem 5rem 5rem;
     grid-template-areas:
-    "header header"
-    "nav-bio main"
-    "nav-resume main"
-    "nav-projects main"
-    "filler main"
-    "footer footer";
+    "header header social-github social-linkedin social-twitter"
+    "nav-bio main main main main"
+    "nav-resume main main main main"
+    "nav-projects main main main main"
+    "filler main main main main"
+    "footer footer footer footer footer";
     min-height: 100%;
 }
 
-#layout > header {
+@media (max-width: 700px) {
+    #layout {
+        grid-template-rows: 5rem 5rem 5rem 1fr min-content;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+            "header header header"
+            "social-github social-linkedin social-twitter"
+            "nav-bio nav-resume nav-projects"
+            "main main main"
+            "footer footer footer";
+    }
+    #social-github{
+        padding-left: 33%;
+        grid-area: social-github;
+        padding-top: 1em;
+    }
     
+    #social-linkedin{
+        padding-left: 33%;
+        grid-area: social-linkedin;
+        padding-top: 1em;
+    }
+    
+    #social-twitter {
+        padding-left: 33%;
+        grid-area: social-twitter;
+        padding-top: 1em;
+    }
+    
+  }
+
+#layout > header {
+    /* align-items: center;
+    justify-self: center; */
+    display:flex;
+    justify-items: center;
     grid-area: header;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    
 }
 
 #logo {
@@ -68,11 +108,11 @@ html,body {
 
 #layout .bio{
     grid-area: nav-bio;
-    
+
 }
 
 .icon {
-    width: 100%; height: auto;
+    width: 100%; height: 100%;
     filter: invert(40%);
 }
 
@@ -92,6 +132,11 @@ html,body {
 }
 
 #layout .frame {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    width:100%;
+    height:100%;
     grid-area: main;
 }
 
@@ -103,10 +148,13 @@ html,body {
     grid-area: footer;
 }
 
+
+
 #title {
     height:100%;
-
-    justify-content:flex-start;
+    align-self: center;
+    justify-self: center;
+    justify-content: center;
     align-items: center;
 
 }
@@ -124,6 +172,7 @@ html,body {
 
 #social a{
     padding-right: 1em;
+    padding-left: 1em;
 }
 
 h1 {
@@ -168,4 +217,19 @@ iframe {
 .screenshot {
     height: 10em;
     width: auto;
+}
+
+#social-github{
+    grid-area: social-github;
+    padding-top: 1em;
+}
+
+#social-linkedin{
+    grid-area: social-linkedin;
+    padding-top: 1em;
+}
+
+#social-twitter {
+    grid-area: social-twitter;
+    padding-top: 1em;
 }

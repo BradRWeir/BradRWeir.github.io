@@ -10,8 +10,22 @@ h2{
 header {
     background-color: #3C3C3C;
     color:#CCCCCC;
-    box-shadow: 0em 0em 0.5em 0.5em rgba(0,0,0,0.75);
-    z-index:3;
+    
+}
+
+#social-github{
+    background-color: #3C3C3C;
+    color:#CCCCCC;
+}
+
+#social-linkedin{
+    background-color: #3C3C3C;
+    color:#CCCCCC;
+}
+
+#social-twitter {
+    background-color: #3C3C3C;
+    color:#CCCCCC;
 }
 
 nav {
