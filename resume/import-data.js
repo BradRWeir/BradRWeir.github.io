@@ -95,7 +95,7 @@ function handleCoursework(rows, columns) {
         spanLocation.classList.add("location");
         spanLocation.innerText=location;
         h3.appendChild(spanSchool);
-        h3.appendChild(spanLocation); 
+        //h3.appendChild(spanLocation); 
 
         let h4 = document.createElement("h4");
         let spanCertification = document.createElement('span');
@@ -138,7 +138,7 @@ var ski = document.getElementById("ski");
 function handleSkills(columns){
     //TODO: use columns keys
     console.log(columns);
-    let skillTypes = ["Programming", "Productivity", "Communication"];
+    let skillTypes = ["Programming"];
     skillTypes.forEach((skillType)=>{
         console.log(skillType);
         let h3 = document.createElement("h3");
@@ -156,7 +156,7 @@ function handleSkills(columns){
                 ul.appendChild(li);
             }
         });
-        ski.appendChild(h3);
+        //ski.appendChild(h3);
         ski.appendChild(ul);
     });
 }
@@ -164,3 +164,5 @@ function handleSkills(columns){
 fetch(SKI_URL)
         .then(response => response.json())
         .then(json => handleSkills(json.columns));
+
+//----------------------------------
