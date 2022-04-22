@@ -233,3 +233,20 @@ iframe {
     grid-area: social-twitter;
     padding-top: 1em;
 }
+
+.icon:hover{
+    filter: invert(100%);
+}
+
+.icon-row:hover{
+    filter: invert(100%);
+}
+
+a{
+    color:white;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration-line: underline;
+}
